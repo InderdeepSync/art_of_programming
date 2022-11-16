@@ -18,7 +18,19 @@ Output:
 1 1 1
 
 """
+n=3
 
 def display_pattern(num: int):
-    pass
+    for i in range(n*2-1):
+        # print (i+1)
+        a = 0
+        for j in range(n*2-1):
+            if (a == i):
+                print (a, end="")
+            elif (a < i):
+                print (a, end="")
+                a+=1
+        print()
+
+display_pattern(n)
 
